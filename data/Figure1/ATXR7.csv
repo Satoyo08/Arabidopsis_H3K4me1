@@ -1,0 +1,2 @@
+modelStart,modelEnd,colour,endStyle,end,display,startStyle,aliEnd,modelLength,text,href,type,metadata/scoreName,metadata/score,metadata/description,metadata/end,metadata/accession,metadata/database,metadata/identifier,metadata/aliEnd,metadata/type,metadata/aliStart,metadata/start,aliStart,start
+2,168,#2dcf00,curved,1383,,curved,1382,169,SET,/family/PF00856,pfama,e-value,7e-17,SET domain,1383,PF00856,pfam,SET,1382,Family,1278,1277,1278,1277

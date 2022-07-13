@@ -1,0 +1,6 @@
+modelStart,modelEnd,colour,endStyle,end,display,startStyle,aliEnd,modelLength,text,href,type,metadata/scoreName,metadata/score,metadata/description,metadata/end,metadata/accession,metadata/database,metadata/identifier,metadata/aliEnd,metadata/type,metadata/aliStart,metadata/start,aliStart,start
+2,92,#2dcf00,curved,305,,curved,302,96,PWWP,/family/PF00855,pfama,e-value,2.1e-07,PWWP domain,305,PF00855,pfam,PWWP,302,Domain,206,205,206,205
+1,51,#ff5353,curved,454,,curved,453,52,PHD,/family/PF00628,pfama,e-value,0.0011,PHD-finger,454,PF00628,pfam,PHD,453,Domain,400,400,400,400
+2,36,#5b5bff,straight,641,,straight,641,36,PHD_2,/family/PF13831,pfama,e-value,9e-08,PHD-finger,641,PF13831,pfam,PHD_2,641,Family,607,606,607,606
+2,110,#ebd61d,curved,760,,curved,760,110,zf-HC5HC2H_2,/family/PF13832,pfama,e-value,8.4e-23,PHD-zinc-finger like domain,760,PF13832,pfam,zf-HC5HC2H_2,760,Domain,648,647,648,647
+1,168,#ba21e0,curved,1002,,curved,1001,169,SET,/family/PF00856,pfama,e-value,2e-14,SET domain,1002,PF00856,pfam,SET,1001,Family,896,896,896,896

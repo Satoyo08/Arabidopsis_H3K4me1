@@ -1,0 +1,8 @@
+modelStart,modelEnd,colour,endStyle,end,display,startStyle,aliEnd,modelLength,text,href,type,metadata/scoreName,metadata/score,metadata/description,metadata/end,metadata/accession,metadata/database,metadata/identifier,metadata/aliEnd,metadata/type,metadata/aliStart,metadata/start,aliStart,start
+16,49,#2dcf00,straight,252,,straight,248,55,LBR_tudor,/family/PF09465,pfama,e-value,0.0011,Lamin-B receptor of TUDOR domain,252,PF09465,pfam,LBR_tudor,248,Domain,215,210,215,210
+1,95,#ff5353,curved,391,,curved,390,96,PWWP,/family/PF00855,pfama,e-value,8.4e-12,PWWP domain,391,PF00855,pfam,PWWP,390,Domain,299,299,299,299
+1,51,#5b5bff,straight,497,,straight,497,51,FYRN,/family/PF05964,pfama,e-value,9.5e-10,F/Y-rich N-terminus,497,PF05964,pfam,FYRN,497,Family,447,447,447,447
+2,73,#ebd61d,jagged,582,,curved,576,84,FYRC,/family/PF05965,pfama,e-value,2.4e-08,F/Y rich C-terminus,582,PF05965,pfam,FYRC,576,Family,507,506,507,506
+1,36,#ba21e0,straight,658,,straight,658,36,PHD_2,/family/PF13831,pfama,e-value,2.7e-07,PHD-finger,658,PF13831,pfam,PHD_2,658,Family,623,623,623,623
+1,90,#ff9c42,curved,785,,curved,785,90,zf-HC5HC2H,/family/PF13771,pfama,e-value,1.9e-19,PHD-like zinc-binding domain,785,PF13771,pfam,zf-HC5HC2H,785,Domain,688,688,688,688
+1,168,#ff7dff,curved,1016,,curved,1015,169,SET,/family/PF00856,pfama,e-value,9.1e-12,SET domain,1016,PF00856,pfam,SET,1015,Family,909,909,909,909

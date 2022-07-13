@@ -1,0 +1,7 @@
+modelStart,modelEnd,colour,endStyle,end,display,startStyle,aliEnd,modelLength,text,href,type,metadata/scoreName,metadata/score,metadata/description,metadata/end,metadata/accession,metadata/database,metadata/identifier,metadata/aliEnd,metadata/type,metadata/aliStart,metadata/start,aliStart,start
+1,95,#2dcf00,curved,405,,curved,404,96,PWWP,/family/PF00855,pfama,e-value,5.60E-11,PWWP domain,405,PF00855,pfam,PWWP,404,Domain,313,313,313,313
+1,51,#ff5353,straight,513,,straight,513,51,FYRN,/family/PF05964,pfama,e-value,4.30E-11,F/Y-rich N-terminus,513,PF05964,pfam,FYRN,513,Family,463,463,463,463
+1,70,#5b5bff,jagged,598,,curved,590,84,FYRC,/family/PF05965,pfama,e-value,1.20E-06,F/Y rich C-terminus,598,PF05965,pfam,FYRC,590,Family,522,522,522,522
+1,36,#ebd61d,straight,675,,straight,675,36,PHD_2,/family/PF13831,pfama,e-value,1.40E-06,PHD-finger,675,PF13831,pfam,PHD_2,675,Family,640,640,640,640
+2,110,#ba21e0,curved,806,,curved,806,110,zf-HC5HC2H_2,/family/PF13832,pfama,e-value,3.90E-29,PHD-zinc-finger like domain,806,PF13832,pfam,zf-HC5HC2H_2,806,Domain,684,683,684,683
+1,168,#ff9c42,curved,1037,,curved,1036,169,SET,/family/PF00856,pfama,e-value,1.60E-12,SET domain,1037,PF00856,pfam,SET,1036,Family,930,930,930,930

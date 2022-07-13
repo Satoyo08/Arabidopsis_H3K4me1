@@ -1,0 +1,74 @@
+---
+title: "R RandomForest_arabidopsis"
+output: html_notebook
+---
+
+This Script train and save randam forest models for arabidopsis.
+Models are visualized with Figure3.r.
+'ChIP8'=Fig.3, 'ChIP7'=biological replicates shown in Supplementry Fig.3
+
+
+```{r load functions and data}
+source("RF_functions.r")
+library(randomForest)
+savedir='data/Figure3/'
+```
+
+
+```{r 1. ATX1_with_K36me3_ChIP8 Fig.3b}
+S<-TAGg[order(-TAGg$ATX1_ChIP8TSS),];posID<-S[1:3000,1];
+ATX1_with_K36me3_ChIP8_rep<-repeat_train(AL,posID,'remove nothing')
+savefilename="ATX1_with_K36me3_ChIP8_rep"
+save(ATX1_with_K36me3_ChIP8_rep,file=paste(savedir,savefilename,sep=''))
+```
+
+```{r 2. ATX2_with_K36me3_CHIP8 Fig.3c}
+S<-TAGg[order(-TAGg$ATX2_ChIP8TSS),];posID<-S[1:3000,1];
+ATX2_with_K36me3_ChIP8_rep<-repeat_train(AL,posID,'remove nothing')
+savefilename="ATX2_with_K36me3_ChIP8_rep"
+save(ATX2_with_K36me3_ChIP8_rep,file=paste(savedir,savefilename,sep=''))
+```
+
+```{r 3.ATX1_with_K36me3_CHIP7_rep SFig.5e}
+S<-TAGg[order(-TAGg$ATX1_ChIP7TSS),];posID<-S[1:3000,1];
+ATX1_with_K36me3_ChIP7_rep<-repeat_train(AL,posID,'remove nothing')
+savefilename="ATX1_with_K36me3_ChIP7_rep"
+save(ATX1_with_K36me3_ChIP7_rep,file=paste(savedir,savefilename,sep=''))
+```
+
+```{r 4.ATX2_with_K36me3_CHIP7_rep SFig.5f}
+S<-TAGg[order(-TAGg$ATX2_ChIP7TSS),];posID<-S[1:3000,1];
+ATX2_with_K36me3_ChIP7_rep<-repeat_train(AL,posID,'remove nothing')
+savefilename="ATX2_with_K36me3_ChIP7_rep"
+save(ATX2_with_K36me3_ChIP7_rep,file=paste(savedir,savefilename,sep=''))
+```
+
+```{r 5.ATXR7_with_K36me3_CHIP8 Fig.3a}
+S<-TAGg[order(-TAGg$ATXR7_ChIP8TES),];posID<-S[1:3000,1];
+savefilename="ATXR7_with_K36me3_ChIP8_rep"
+ATXR7_with_K36me3_ChIP8_rep<-repeat_train(AL,posID,'remove nothing')
+save(ATXR7_with_K36me3_ChIP8_rep,file=paste(savedir,savefilename,sep=''))
+```
+
+```{r 6.ATXR7_with_K36me3_CHIP7_rep SFig.5d}
+S<-TAGg[order(-TAGg$ATXR7_soiTES),];posID<-S[1:3000,1];
+savefilename="ATXR7_with_K36me3_ChIP7_rep"
+ATXR7_with_K36me3_ChIP7_rep<-repeat_train(AL,posID,'remove nothing')
+save(ATXR7_with_K36me3_ChIP7_rep,file=paste(savedir,savefilename,sep=''))
+```
+
+```{r 7.ATXR7_with_K36me3_CHIP8_with_FLD SFig.8a}
+S<-TAGg[order(-TAGg$ATXR7_ChIP8TES),];posID<-S[1:3000,1];
+savefilename="ATXR7_with_K36me3_ChIP8_rep_FLD"
+ALF<-merge(AL,FLD_sa[,1:2],by='ID');head(ALF);colnames(ALF)[ncol(ALF)]<-'FLD'
+ATXR7_with_K36me3_ChIP8_rep_FLD<-repeat_train(ALF,posID,'remove nothing')
+save(ATXR7_with_K36me3_ChIP8_rep_FLD,file=paste(savedir,savefilename,sep=''))
+```
+
+```{r 11. ATXR3 Fig.6b}
+S<-TAG_R3[order(-TAG_R3$SDG2_TSS2),];posID<-S[1:3000,1];
+ATXR3_RF_re_withoutS2Lb_or_TSS1_new<-repeat_train(AL_R,posID,'TSS_|S2Lb')
+savefilename="ATXR3_RF_re_withoutS2Lb_or_TSS1_new"
+save(ATXR3_RF_re_withoutS2Lb_or_TSS1_new,file=paste(savedir,savefilename,sep=''))
+```
+
