@@ -59,12 +59,12 @@ boxplot(ChIP10_FLG$ATX2_tag,ChIP10_FLG$ATX2_tag_hub,
 wilcox.test(ChIP10_FLG$ATX2_tag/ChIP10_FLG$ATX2_tag_hub,c2ChIP10$ATX2_tag/c2ChIP10$ATX2_tag_hub)
 wilcox.test(ChIP11_FLG$ATX2/ChIP11_FLG$ATX2_hub,c2ChIP11$ATX2/c2ChIP11$ATX2_hub)
 
-# calculate the overlaps
+# calculate the overlaps, between genes that lost in silico hub and 
 cand<-cand2
-K4_files<-list.files('data/supplemental/hubs/',pattern='intersect');K4_files_r<-K4_files[grep('reduction',K4_files)]
-tag_files<-list.files('data/supplemental/FLAG/',pattern='intersect')
+K4_files<-list.files('data/supplemental/hubs',pattern='intersect',full.names = TRUE)
+tag_files<-list.files('data/supplemental/FLAG',pattern='intersect',full.names = TRUE)
 
-intersect_files<-K4_files_r
+intersect_files<-K4_files
 HYPG<-as.data.frame(matrix(nrow=length(intersect_files),ncol=7))
 for(i in 1:length(intersect_files)){
   ids<-unique(read.table(as.character(intersect_files[i]))$V4)
@@ -86,7 +86,7 @@ for(i in 1:length(K4_files)){
   print(length(K4_ids));print(K4_files[i])
   HYPG[i,1]<-as.character(K4_files[i])
   for(j in 1:length(tag_files)){
-    tag_ids<-unique(read.table(paste('data/supplemental/FLAG/',as.character(tag_files[j]),sep=''))$V4)
+    tag_ids<-unique(read.table(as.character(tag_files[j]))$V4)
     q<-length(intersect(tag_ids,K4_ids))
     m<-length(K4_ids)
     n<-27408-m
