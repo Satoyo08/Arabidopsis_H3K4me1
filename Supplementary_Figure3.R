@@ -12,6 +12,14 @@ S<-TAGg[order(-TAGg$ATX1_ChIP8TSS),];ATX1_bound<-S[1:3000,1];
 S<-TAGg[order(-TAGg$ATX2_ChIP8TSS),];ATX2_bound<-S[1:3000,1];
 S<-TAGg[order(-TAGg$ATXR7_ChIP8TES),];ATXR7_bound<-S[1:3000,1];
 
+write.table(ATX1_bound_CHIP7,file='data/list_of_genes/ATX1_bound_genes_rep2.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+write.table(ATX2_bound_CHIP7,file='data/list_of_genes/ATX2_bound_genes_rep2.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+write.table(ATXR7_bound_CHIP7,file='data/list_of_genes/ATXR7_bound_genes_rep2.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+write.table(ATX1_bound,file='data/list_of_genes/ATX1_bound_genes_rep1.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+write.table(ATX2_bound,file='data/list_of_genes/ATX2_bound_genes_rep1.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+write.table(ATXR7_bound,file='data/list_of_genes/ATXR7_bound_genes_rep1.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+
+
 # atx12r7-marked genes
 ALm<-merge(atx12r7_rpm,len,by='ID');ALrpkm<-data.frame(ALm$ID,ALm[,2:17]*1000/ALm$len);colnames(ALrpkm)[1]<-'ID'
 DF<-gonly(ALrpkm)

@@ -59,6 +59,10 @@ DF<-gonly(RPKM);S<-DF[order(DF$x127_me1-DF$WT_me1),];new_red<-S[1:3000,1]
 DF<-gonly(RPM);S<-DF[order(DF$x345_me2-DF$WT_me2),];new_green<-S[1:3000,1]
 DF<-gonly(RPM);S<-DF[order(DF$r3_me3-DF$WT_me3),];new_blue<-S[1:3000,1]
 
+#write.table(new_red,file='data/list_of_genes/ATX12R7-marked_gened.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+#write.table(new_green,file='data/list_of_genes/ATX345-marked_gened.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+#write.table(new_blue,file='data/list_of_genes/ATXR3-marked_gened.txt',col.names = F,row.names=FALSE, quote=FALSE,sep = "\t")
+
 #--3x3 plot
 AL<-merge(RPKM,RPM,by='ID');AL[,ncol(AL)+1]<-0
 AL[AL$ID %in% new_red,]$V34<-AL[AL$ID %in% new_red,]$V34+1
