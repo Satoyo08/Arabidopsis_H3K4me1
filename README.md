@@ -16,7 +16,7 @@ Upon multiple requests, we added the following list of genes in data/list_of_gen
 
 As a note for reproducibility, those lists can also be generated (as R object) by running Figure1.R L58- for ATX*-marked genes, and by Supplementary_Figure3.R L8- for ATX*-bound genes.
 
-- *Are you looking for the formatted data table behind scatter plot of Figure1. d?* Please use data/Figure1/ChIP1_RPKM.txt and data/Figure1/ChIP1_RPM.txt.
+- **Are you looking for the formatted data table behind scatter plot of Figure1. d?** Please use data/Figure1/ChIP1_RPKM.txt and data/Figure1/ChIP1_RPM.txt.
 - Are you looking for browser tracks? Sorry, we didn't upload them in GEO nor here (we might in future)-  tell us (soya[at]ucdavis.edu) what you need and we'll email you.
 
 Can't find what you are looking for? Pardon my bad code annotation! Please ask via issue section of github or contact soya[at]ucdavis.edu ;)
