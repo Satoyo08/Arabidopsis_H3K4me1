@@ -19,4 +19,4 @@ As a note for reproducibility, those lists can also be generated (as R object) b
 - **Are you looking for the formatted data table behind scatter plot of Figure1. d?** Please use data/Figure1/ChIP1_RPKM.txt and data/Figure1/ChIP1_RPM.txt.
 - Are you looking for browser tracks? Sorry, we didn't upload them in GEO nor here (we might in future)-  tell us (soya[at]ucdavis.edu) what you need and we'll email you.
 
-Can't find what you are looking for? Pardon my bad code annotation! Please ask via issue section of github or contact soya[at]ucdavis.edu ;)
+Can't find what you are looking for? Pardon my bad code annotation! Please ask us via "Issues" section of GitHub or contact soya[at]ucdavis.edu ;)
