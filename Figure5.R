@@ -31,7 +31,7 @@ plot_2d<-function(rnas,K4s,AL){
     #title<-paste('AVG_',colnames(AL)[rna],colnames(AL)[k4],sep='_') ;
     #jpeg(paste(title,'_color_bar.jpeg',sep=''),height=1000,width=1180,res=300);par(mar=c(0.1,0.1,0.1,0.1),cex=1) 
     Dp<-AL[AL[,rna]>0,];D<-Dp[sample(1:nrow(Dp),min_sample),];rd=kde2d(x=rank(D[,k4]),y=rank(D[,rna]),h=c(3300,3300),n=70)
-    filled.contour(rd$x,rd$y,rd$z,col=hmp_pallets,evels=seq(from=zmin,to=zmax,by=(zmax-zmin)/(bins-1)),cex=0.2);
+    filled.contour(rd$x,rd$y,rd$z,col=hmp_pallets,levels=seq(from=zmin,to=zmax,by=(zmax-zmin)/(bins-1)),cex=0.2);
     #dev.off()
   }
   
