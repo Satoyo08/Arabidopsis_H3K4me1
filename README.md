@@ -23,11 +23,6 @@ If you use this code, please cite:
 Oya, S., Takahashi, M., Takashima, K., Kakutani, T. & Inagaki, S. Transcription-coupled and epigenome-encoded mechanisms direct H3K4 methylation. Nat. Commun. 13, 4521 (2022).
   
 
-
-## License
-
-
-
 ## update 2024.01.11
 
 Upon multiple requests, we added the following list of genes in data/list_of_genes folder.
@@ -45,3 +40,6 @@ As a note for reproducibility, those lists can also be generated (as R object) b
 - Are you looking for browser tracks? Sorry, we didn't upload them in GEO nor here — tell us (soya[at]ucdavis.edu) what you need and we'll email you.
 
 Can't find what you are looking for? Pardon my bad code annotation! Please ask via the Issues section or contact soya[at]ucdavis.edu
+
+## License
+This repository is free to use (licensed under the MIT License — see the [LICENSE](LICENSE) file for details.)
